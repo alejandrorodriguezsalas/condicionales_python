@@ -22,6 +22,9 @@ def ej1():
     # Comparadores
     # Ingrese dos números cualesquiera y realice las sigueintes
     # comparaciones entre ellos
+    print('''       Ej1: comparadores númerico
+    Empecemos por ingresar dos números''')
+
     numero_1 = int(input('Ingrese el primer número:\n'))
 
     numero_2 = int(input('Ingrese el segundo número:\n'))
@@ -29,15 +32,44 @@ def ej1():
     # Compare cual de los dos números es mayor
     # Imprima en pantalla según corresponda
 
+    if numero_1 > numero_2:
+        print("El numero mayor es {}\n".format(numero_1))
+    elif numero_1 < numero_2:
+        print("El numero mayor es {}\n".format(numero_2))
+    else:
+        print("Los números son iguales\n")
+
+
+
     # Verifique si el numero_1 positivo, negativo o cero
     # Imprima el resultado en cada caso
 
+    print("Verificación si el primer número {} es positivo, negativo o cero:".format(numero_1))
+    if numero_1 > 0:
+        print("El número {} es: POSITIVO\n".format(numero_1))
+    elif numero_1 < 0:
+        print("El número {} es: NEGATIVO\n".format(numero_1))
+    else:
+        print("El número es 0\n")
+
+
     # Verifique si el numero_1 es mayor a 0 y menor a 100
     # Imprima en pantalla si se cumple o no la condición
+    print("Verificación si el numero {} esta dentro del conjunto (0,100)".format(numero_1))
+    if numero_1 > 0 and numero_1 < 100:
+        print("El número {} esta dentro del conjunto\n".format(numero_1))
+    else:
+        print("El número {} esta fuera del conjunto\n".format(numero_1))
 
     # Verifique si el numero_1 es menor a 10 o el numero_2
     # es mayor a -2
     # Imprima en pantalla si se cumple o no la condición
+    print("Verificar si el número {} es menor a 10 o si {} es mayor a -2".format(numero_1,numero_2))
+    if numero_1 < 10 or numero_2 > -2:
+        print("{} o {} cumple la condición\f".format(numero_1,numero_2))
+    else:
+        print(" {} y {} NO cumplen con la condición\f".format(numero_1,numero_2))
+
 
 
 def ej2():
@@ -46,32 +78,55 @@ def ej2():
     # Comparadores
     # Ingrese dos palabras cualesquiera y realice las sigueintes
     # comparaciones entre ellas
+    print('''Ej2:comparadores de texto
+    con 2 palabras''')
     texto_1 = str(input('Ingrese la primera palabra:\n'))
 
     texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
+    if texto_1 > texto_2:
+        print("{} es mayor a {}\n".format(texto_1,texto_2))
+    else:
+        print("{} es mayor a {}\n".format(texto_2,texto_1))
 
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
+    if len(texto_1) > len(texto_2):
+        print("{} tiene mayor cantidad de letras\n".format(texto_1))
+    elif len(texto_1) < len(texto_2):
+        print("{} tiene mayor cantida de letras\n".format(texto_2))
+    else:
+        print("Las palabras tiene la misma cantidad de letras\n")
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
     # Imprima en pantalla según corresponda
+    if texto_1[0] > texto_2[0]:
+        print("{} es mayor a {}".format(texto_1[0],texto_2[0]))
+    else:
+        print("{} es mayor a {}".format(texto_2[0],texto_1[0]))
+    
 
     copia_texto_1 = texto_1  # Copia de la variable texto_1
 
     # Verifique que copia_texto_1 es igual a texto_1
     # Imprima en pantalla según corresponda
+    if copia_texto_1 == texto_1:
+        print("{} es igual a {}".format(copia_texto_1,texto_1))
+    
 
     # Verifique que copia_texto_1 es distinta a texto_2
     # Imprima en pantalla según corresponda
 
+    if copia_texto_1 != texto_2:
+        print("{} es distinto de {}\f".format(copia_texto_1,texto_2))
 
 def ej3():
     # Ejercicios de práctica numérica
+    print("Ej3: práctica numérica")
 
     # Condicionales anidados
     numero_1 = 7
@@ -87,8 +142,23 @@ def ej3():
     #       --> En caso afirmativo imprima en pantalla "Resp=3"
     #       --> En caso negativo imprima en pantalla "Resp=4"
 
+    if numero_1 > 5:
+        print("{} es mayor a 5".format(numero_1))
+        if numero_2 > 0:
+            print("Resp=1")
+        else:
+            print("Resp=2\n")
+    else:
+        print("{} no es mayor a 5".format(numero_1))
+        if numero_2 > 5:
+            print("Resp=3")
+        else:
+            print("Resp=4")
+
+
     # Verifique la calificación de un estudiante según su
     # puntaje en un examen
+    print("Calificación del alumno:")
     puntaje = 70
 
     # Si el puntaje es mayor igual a 90 --> imprimir A
@@ -100,9 +170,25 @@ def ej3():
     # Debe imprimir en pantalla la calificacion
     # Utilizar "if" anidados
 
+    if puntaje >= 90:
+        print("A\f")
+    elif puntaje >= 80:
+        print("B\f")
+    elif puntaje >= 70:
+        print("C\f")
+    elif puntaje >= 60:
+        print("D\f")
+    else:
+        print("F\f")
+        
+
+  
+
 
 def ej4():
     # Ejemplos variables de texto
+
+    print(''' Ej4: Variable caracter y numérica''')
 
     texto_1 = '5'
     texto_2 = '7'
@@ -110,10 +196,26 @@ def ej4():
     # Verifique cual cual de los dos textos es mayor alfabéticamente
     # Imprima en pantalla según corresponda
 
+    if texto_1 > texto_2:
+        print("{} es mayor a {}".format(texto_1,texto_2))
+    else:
+        print("{} es mayor a {}".format(texto_2,texto_1))
+
     # Transforma esas variables tipo texto y almacénalas
     # en nuevas variables númericas (int)
     # Repita el proceso, ¿Cuál de las nuevas variables es mayor?
     # Imprima en pantalla según corresponda
+    
+    texto_1 = 5   #NO SÉ COMO TRANSFORMAR UNA VARIABLE STR EN UNA VARIABLE INT!!!!!
+    texto_2 = 7
+
+    if texto_1 > texto_2:
+        print("{} es mayor a {}".format(texto_1,texto_2))
+    else:
+        print("{} es mayor a {}".format(texto_2,texto_1))
+
+    
+
 
     # Para pensar!
     # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -124,9 +226,15 @@ def ej4():
     # responder.
     # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
 
+    print('''
+    Los números en variables string tienen el mismo 
+    orden de mayor y menor porque asi estan ordenadas según
+    la tabla ASCII
+    ''')
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    #ej1()
-    #ej2()
-    #ej3()
-    #ej4()
+    ej1()
+    ej2()
+    ej3()
+    ej4()
