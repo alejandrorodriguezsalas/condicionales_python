@@ -66,9 +66,9 @@ def ej1():
     # Imprima en pantalla si se cumple o no la condición
     print("Verificar si el número {} es menor a 10 o si {} es mayor a -2".format(numero_1,numero_2))
     if numero_1 < 10 or numero_2 > -2:
-        print("{} o {} cumple la condición\f".format(numero_1,numero_2))
+        print("{} o {} cumplen la condición\n\n".format(numero_1,numero_2))
     else:
-        print(" {} y {} NO cumplen con la condición\f".format(numero_1,numero_2))
+        print(" {} y {} NO cumplen con la condición\n\n".format(numero_1,numero_2))
 
 
 
@@ -78,8 +78,7 @@ def ej2():
     # Comparadores
     # Ingrese dos palabras cualesquiera y realice las sigueintes
     # comparaciones entre ellas
-    print('''Ej2:comparadores de texto
-    con 2 palabras''')
+    print('Ej2:comparadores de texto')
     texto_1 = str(input('Ingrese la primera palabra:\n'))
 
     texto_2 = str(input('Ingrese la segunda palabra:\n'))
@@ -87,19 +86,19 @@ def ej2():
     # Compare cual de las dos palabras es mayor (alfabéticamente)
     # Imprima en pantalla según corresponda
     if texto_1 > texto_2:
-        print("{} es mayor a {}\n".format(texto_1,texto_2))
+        print("{} es mayor a {}".format(texto_1,texto_2))
     else:
-        print("{} es mayor a {}\n".format(texto_2,texto_1))
+        print("{} es mayor a {}".format(texto_2,texto_1))
 
     # Compare cual de las dos palabras tiene mayor
     # cantidad de letras
     # Imprima en pantalla según corresponda
     if len(texto_1) > len(texto_2):
-        print("{} tiene mayor cantidad de letras\n".format(texto_1))
+        print("{} tiene mayor cantidad de letras".format(texto_1))
     elif len(texto_1) < len(texto_2):
-        print("{} tiene mayor cantida de letras\n".format(texto_2))
+        print("{} tiene mayor cantida de letras".format(texto_2))
     else:
-        print("Las palabras tiene la misma cantidad de letras\n")
+        print("Las palabras tiene la misma cantidad de letras")
 
     # Verifique si la primera letra de la primera palabra
     # es mayor a la primera letra de la segunda palabra
@@ -122,7 +121,7 @@ def ej2():
     # Imprima en pantalla según corresponda
 
     if copia_texto_1 != texto_2:
-        print("{} es distinto de {}\f".format(copia_texto_1,texto_2))
+        print("{} es distinto de {}\n\n".format(copia_texto_1,texto_2))
 
 def ej3():
     # Ejercicios de práctica numérica
@@ -171,15 +170,15 @@ def ej3():
     # Utilizar "if" anidados
 
     if puntaje >= 90:
-        print("A\f")
+        print("A")
     elif puntaje >= 80:
-        print("B\f")
+        print("B")
     elif puntaje >= 70:
-        print("C\f")
+        print("C\n\n")
     elif puntaje >= 60:
-        print("D\f")
+        print("D")
     else:
-        print("F\f")
+        print("F")
         
 
   
@@ -188,7 +187,7 @@ def ej3():
 def ej4():
     # Ejemplos variables de texto
 
-    print(''' Ej4: Variable caracter y numérica''')
+    print('''Ej4: Variable caracter y numérica''')
 
     texto_1 = '5'
     texto_2 = '7'
